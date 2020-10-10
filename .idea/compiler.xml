@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="aconsumer" />
         <module name="aprovider" />
+        <module name="ribbon-native-demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="aconsumer" options="-parameters" />
       <module name="aprovider" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="ribbon-native-demo" options="-parameters" />
     </option>
   </component>
 </project>
