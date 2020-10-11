@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloudone" />
+        <module name="aprovider" />
         <module name="eureka-server" />
         <module name="aconsumer" />
-        <module name="aprovider" />
+        <module name="springcloudone" />
         <module name="ribbon-native-demo" />
+        <module name="spring-rest-template" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
       <module name="aprovider" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="ribbon-native-demo" options="-parameters" />
+      <module name="spring-rest-template" options="-parameters" />
     </option>
   </component>
 </project>

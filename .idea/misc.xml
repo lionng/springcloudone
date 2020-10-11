@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/aprovider/pom.xml" />
         <option value="$PROJECT_DIR$/aconsumer/pom.xml" />
         <option value="$PROJECT_DIR$/ribbon-native-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-rest-template/pom.xml" />
       </list>
     </option>
   </component>
