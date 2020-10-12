@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/aconsumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/aprovider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-inherit-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon-native-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-rest-template" charset="UTF-8" />
   </component>

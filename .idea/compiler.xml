@@ -14,12 +14,16 @@
         <module name="spring-rest-template" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="feign-inherit-api" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aconsumer" options="-parameters" />
       <module name="aprovider" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="feign-inherit-api" options="-parameters" />
       <module name="ribbon-native-demo" options="-parameters" />
       <module name="spring-rest-template" options="-parameters" />
     </option>
