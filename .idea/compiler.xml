@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="aconsumer" />
         <module name="springcloudone" />
+        <module name="hystrix-feign-demo" />
         <module name="ribbon-native-demo" />
         <module name="spring-rest-template" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="aprovider" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="feign-inherit-api" options="-parameters" />
+      <module name="hystrix-feign-demo" options="-parameters" />
       <module name="ribbon-native-demo" options="-parameters" />
       <module name="spring-rest-template" options="-parameters" />
     </option>
