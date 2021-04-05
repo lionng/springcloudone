@@ -19,20 +19,36 @@ public class HouseClientController {
     //public HouseInfo getData(@RequestParam("name") String name) {
     //    return restTemplate.getForObject("http://localhost:8083/house/data?name=" + name, HouseInfo.class);
     //}
+
+    /**
+     * BeanConfiguration类中的@LoadBalanced需要加上
+     * @param name
+     * @return
+     */
     @GetMapping("/call/data")
     public HouseInfo getData(@RequestParam("name") String name) {
         return restTemplate.getForObject("http://ribbon-eureka-demo/house/data?name=" + name, HouseInfo.class);
     }
 
+    /**
+     * BeanConfiguration类中的@LoadBalanced需要加上
+     * @param name
+     * @return
+     */
     @GetMapping("call/data/{name}")
     public String getData2(@PathVariable("name") String name) {
-        return restTemplate.getForObject("http://localhost:8083/house/data/{name}", String.class, name);
+        return restTemplate.getForObject("http://ribbon-eureka-demo/house/data/{name}", String.class, name);
     }
 
+    /**
+     * BeanConfiguration类中的@LoadBalanced需要注释掉
+     * @param name
+     * @return
+     */
     @GetMapping("call/dataEntity")
     public HouseInfo getData3(@RequestParam("name") String name) {
         ResponseEntity<HouseInfo> responseEntity = restTemplate
-                .getForEntity("http://localhost:8083/house/data?name=" + name, HouseInfo.class);
+                .getForEntity("http://ribbon-eureka-demo/house/data?name=" + name, HouseInfo.class);
         if (responseEntity.getStatusCodeValue() == 200) {
             return responseEntity.getBody();
         }
@@ -45,7 +61,7 @@ public class HouseClientController {
         houseInfo.setCity("上海");
         houseInfo.setRegion("虹口");
         houseInfo.setName("明珠");
-        Long id = restTemplate.postForObject("http://localhost:8083/house/save", houseInfo, Long.class);
+        Long id = restTemplate.postForObject("http://ribbon-eureka-demo/house/save", houseInfo, Long.class);
         return id;
     }
 }
