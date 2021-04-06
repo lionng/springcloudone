@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="aprovider" />
-        <module name="eureka-server" />
         <module name="aconsumer" />
-        <module name="springcloudone" />
-        <module name="hystrix-feign-demo" />
         <module name="ribbon-native-demo" />
+        <module name="hystrix-feign-demo" />
         <module name="spring-rest-template" />
+        <module name="eureka-server" />
+        <module name="springcloudone" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableHystrix
+//@EnableHystrix
 //@EnableFeignClients(basePackages = "top.zhangxiaofeng.hystrixfeigndemo.client")
 public class HystrixFeignDemoApplication {
 
